@@ -907,41 +907,13 @@ header.sticky{
 }
 
 /* VER HP */
-/*
-@media(max-width:750px){
-    header{
-        padding: 20px 52% 20px 15%;
-    }
-    header.sticky{
-        padding: 20px 52% 20px 15%;
-        transition: .4s;
-    }
-}
-@media(max-width:750px){
-    .main-home{
-        background-size: cover;
-        background-size: 850px;
-    }
-    .main-text h1{
-        font-size: 25px;
-        transition: .4s;
-    }
-    .main-text p{
-        font-size: 18px;
-        transition: .4s;
-    }
-    .main-btn{
-        padding: 10px 20px;
-        transition: .4s;
-    }
-}
-@media(max-width:750px){
+
+@media screen and (max-width:755px){
     #menu-icon{
         visibility: visible;
         position: fixed;
-        margin-left: 300px;
+        margin-left: 130px;
     }
-
     .navmenu{
         position: absolute;
         top: 100%;
@@ -962,87 +934,7 @@ header.sticky{
     .navmenu.open{
         right: 0;
     }
-    .search_button{
-        margin-right: 70px;
-    }
-    .show-search .search_button{
-        margin-right: 70px;
-    }
 }
-@media (max-width:750px){
-    #menu-icon{
-        visibility: visible;
-        position: fixed;
-        margin-left: 200px;
-    }
-    .search_button{
-        margin-right: 150px;
-    }
-    .show-search .search_button{
-        margin-right: 150px;
-    }
-    .search{
-        width: 190px;
-    }
-    .card{
-        margin: 50px 45px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 60px;
-        width: 85%;
-        height: 150vh;
-        text-align: center;
-        flex-direction: column;
-    }
-    .card h3{
-        margin-right: 0;
-    }
-    .card img{
-        margin: -100px 0 30px 22px;
-        width: 85%;
-        max-width: 1000px;
-        border-radius: 500px;
-    }
-    .card p{
-        max-width: 360px;
-    }
-    .card1{
-        margin: 90px 45px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 60px;
-        width: 85%;
-        height: 150vh;
-        text-align: center;
-        flex-direction: column;
-    }
-    .card1 h3{
-        margin-top: 240px;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .card1 img{
-        margin: -800px 0px 30px 30px;
-        max-width: 280px;
-        width: 50vw;
-        height: 290px;
-        border-radius: 1000px;
-    }
-    .card1 p{
-        max-width: 360px;
-    }
-    .container{
-        width: 500px;
-    }
-}
-@media(max-width:630px){
-    .card1 img{
-        width: 240px;
-        height: 240px;
-        margin: -850px 0 0 ;
-    }
-} */
-
 @media screen and (max-width:632px){
     html,body{
         overflow-x: hidden;
