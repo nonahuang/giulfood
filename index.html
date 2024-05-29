@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GiulFood</title>
+    <!-- CSS-link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="image/index/GiulFoodLogo2.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#main-home" class="logo"><img src="image/GiulFood5.png" alt=""/></a>
+        <ul class="navmenu">
+            <li><a href="#main-home">home</a></li>
+            <li><a href="#product">menu</a></li>
+            <li><a href="#aboutus">about us</a></li>
+            <li><a href="#rating">comment</a></li>
+            <li><a href="#contacts">contact</a></li>
+        </ul>
+
+        <!--NAVIGASI-->
+        <div class="nav-icon">
+            <div class="search_element">
+                <form action="" class="search" id="search-bar">
+                    <input type="text" placeholder="Jajan ah..." class="search_input" id="myinput" onkeyup="searchbox()">
+                    <div class="search1">
+                        <div class="search-list-item" onclick="togglePopup()" id="MyList">
+                            <div class="search-item-product" id="mylist">
+                                <img src="image/1.png" alt=""/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Piscok</h1>
+                                <p>Rp10.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup2()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/4.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Mochi</h1>
+                                <p>Rp8.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup3()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/9.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Kue Bandung</h1>
+                                <p>Rp3.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup4()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/5.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Basreng</h1>
+                                <p>Rp7.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup5()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/6.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Makaroni Pedas</h1>
+                                <p>Rp7.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup6()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/8.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Tahu Mercon</h1>
+                                <p>Rp10.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup7()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/2.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Es Lumut</h1>
+                                <p>Rp8.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup8()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/3.2.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Pudot</h1>
+                                <p>Rp10.000</p>
+                            </div>
+                        </div>
+                        <div class="search-list-item"onclick="togglePopup9()" id="MyList">
+                            <div class="search-item-product">
+                                <img src="image/7.png"/>
+                            </div>
+                            <div class="search-item-info">
+                                <h1>Es Kuwut</h1>
+                                <p>Rp4.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_button" id="search-button">
+                        <span class="material-symbols-outlined search_icon" id="search_icon">search</span>
+                        <span class="material-symbols-outlined search_close" id="search_close">close</span>
+                    </div>
+                </form>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!--MAIN HOME/BERANDA-->
+    <section class="main-home" id="main-home">
+        <div class="main-text">
+            <h5>GiulFood Website</h5>
+            <h1>Spend Your Free Time<br>With Giulfood</h1>
+            <p>Our Food, Your Choice</p>
+            <a href="#product" class="main-btn">Buy Now<i class='bx bx-right-arrow-alt' ></i></a>
+        </div>
+    </section>
+
+    <!--MENU -->
+    <section class="product" id="product">
+        <div class="custom-shape-divider-bottom-1714973479">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="center-text">
+            <h2>Apa aja sih <span>yang kami jual?</span></h2>
+        </div>
+        <div class="product">
+            <div class="type-product">
+                <div class="type-1">
+                    <h3>Gula-Gula Gembira</h3>
+                    <p>Rasakan kemanisan yang menggelitik lidah Anda!</p>
+                </div>
+            </div>
+
+            <div class="products1 reveal">
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup()"><img src="image/1.png"/></div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Piscok</h4>
+                        <p>Rp 10.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup2()" ><img src="image/4.png"/></div>
+                    <div class="product-text">
+                        <h5>New</h5>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Mochi Daifukku</h4>
+                        <p>Rp 8.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup3()"><img src="image/9.png"/></div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Kue Bandung Mini</h4>
+                        <p>Rp 3.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--JENIS PRODUK-->
+            <div class="type-product reveal">
+                <div class="type-2">
+                    <h3>Mercon Lidah</h3>
+                    <p>Cicip sensasi panas yang nagih di lidah!</p>
+                </div>
+            </div>
+
+            <div class="products2 reveal">
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup4()"><img src="image/5.png"></div>
+                    <div class="product-text">
+                        <h5>Hot</h5>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Basreng</h4>
+                        <p>Rp 7.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup5()"><img src="image/6.png"></div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Makaroni Pedas</h4>
+                        <p>Rp 7.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup6()"><img src="image/8.png"></div>
+                    <div class="product-text">
+                        <h5>New</h5>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Tahu Mercon</h4>
+                        <p>Rp 10.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--JENIS-->
+            <div class="type-product reveal">
+                <div class="type-3">
+                <h3>Segar Dahaga</h3>
+                    <p>Hilangkan haus anda dengan sebuah kesegaran!</p>
+                </div>
+            </div>
+
+            <div class="products3 reveal">
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup7()" ><img src="image/2.png"></div>
+                    <div class="product-text">
+                        <h5>Hot</h5>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Es Lumut</h4>
+                        <p>Rp 8.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup8()"><img src="image/3.2.png"></div>
+                    <div class="product-text">
+                        <h5>Hot</h5>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Pudot</h4>
+                        <p>Rp 10.000</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pop-up" onclick="togglePopup9()"><img src="image/7.png"></div>
+                    <div class="ratting">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <div class="price">
+                        <h4>Es Kuwut</h4>
+                        <p>Rp 4.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--POPUPS PRODUCTS-->
+        <div class="popups">
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/1.png" alt="piscok"/>
+                        <div class="varian1">
+                            <h5><font color="#FF76CE">Varian Saus(+2k)</font></h5>
+                            <p><font color="#9B7554">Coklat</font></p>
+                            <p><font color="#D8AE7E">Tiramisu</font></p>
+                            <p><font color="#A4BD7E">Matcha</font></p>
+                            <p><font color="#CAF4FF">Bubblegum</font></p>
+                            <p><font color="#EC4653">Strawberry</font></p>
+                            <h5><font color="#FF76CE">Varian Topping(+2k)</font></h5>
+                            <p><font color="#714423">Choco Cips</font></p>
+                            <p><font color="#FFA600">Keju</font></p>
+                            <p><font color="#FFF">Oreo</font></p>
+                            <p><font color="#FF6B50">Sprinkle</font></p>
+                        </div>
+                        <div class="text">
+                            <h1>PISANG COKELAT KEJU</h1>
+                            <p>Piscok merupakan jajanan yang menggugah selera dengan kombinasi rasa manis, gurih, dan lezat. Cokelat meleleh yang menyelimuti pisang yang lembut dan rasa gurih dari keju parut menciptakan harmoni cita rasa yang memukau. Menjadi pilihan favorit untuk mengganjal perut di tengah hari yang sibuk.</p>
+                            <h5>Rp 10.000/Box <p>(tanpa saus dan topping)</p></h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/ot2dy0">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup2(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/4.png" alt="piscok"/>
+                        <div class="text">
+                            <h1>MOCHI DAIFUKKU</h1>
+                            <p>Mochi Daifuku merupakan jajanan ringan yang memikat dengan kesederhanaannya yang menggetarkan lidah. Dibuat dengan tepung ketan yang lembut dan elastis, diisi dengan potongan buah segar seperti strawberry. Saat disajikan, permukaan yang lembut dan kenyal dari mochi memikat dengan kelembutannya yang mengundang.</p>
+                            <h5>Rp. 8000/3pcs</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/lbhp65">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-3">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup3(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/9.png" alt="piscok"/>
+                        <div class="text">
+                            <h1>KUE BANDUNG MINI</h1>
+                            <p>Kue Bandung Mini merupakan jajanan tradisional yang dihidangkan dalam bentuk mini dengan taburan kacang atau keju yang gurih di atasnya. Setiap gigitan mempersembahkan sensasi tekstur yang menyenangkan. Sebuah perpaduan sempurna dari manis, gurih, dan lembut, membuat Kue Bandung Mini menjadi pilihan utama untuk mengakhiri hari dengan manis </p>
+                            <h5>Rp 3.000/pcs</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/uo76hz">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-4">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup4(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/5.png" alt="piscok">
+                        <div class="text">
+                            <h1>BAKSO GORENG</h1>
+                            <p>Baso Goreng atau yang sering disebut basreng memberikan sensasi luar biasa dari cita rasa yang menggetarkan lidah. Terbuat dari baso ikan yang dipotong-potong sebelum digoreng hingga kecokelatan dan dilumuri bumbu pedas khas. Basreng bukan sekadar teman nyemil, tetapi juga tantangan bagi para pecinta pedas yang berani mencoba sensasi baru.</p>
+                            <h5>Rp 7.000/bks</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/xekgrr">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-5">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup5(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/6.png" alt="piscok">
+                        <div class="text">
+                            <h1>MAKARONI PEDAS</h1>
+                            <p>Makaroni pedas terbuat dari makaroni yang digoreng hingga garing, kemudian diselimuti dengan bumbu pedas yang khas. Rasakan ledakan pedas dari bumbu-bumbu yang meresap ke dalam setiap helai makaroni dapat menghidupkan mercon di lidah.</p>
+                            <h5>Rp 7.000/bks</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/2lxk0k">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-6">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup6(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/8.png" alt="piscok">
+                        <div class="text">
+                            <h1>TAHU MERCON</h1>
+                            <p>Tahu Mercon salah satu jajanan yang menantang dengan kepedasannya yang membara. Dibuat dari tahu yang dipotong tipis dan dibalut dengan campuran tepung dan bumbu pedas yang khas. Saat digoreng, aroma harum tahu yang garing menggoda selera, sementara rasa pedasnya yang menyengat langsung menggoyang lidah. Setiap gigitan membawa sensasi pedas menggelora. </p>
+                            <h5>Rp 10.000/5pcs</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/11z6wr">
+                                <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-7">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup7(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/2.png" alt="lumut">
+                        <div class="varian">
+                            <h5><font color="#5AB2FF">Varian Rasa</font></h5>
+                            <p><font color="#D8AE7E">Coklat</font></p>
+                            <p><font color="#DC6B19">Mangga</font></p>
+                        </div>
+                        <div class="text">
+                            <h1>ES LUMUT</h1>
+                            <p>Es Lumut dengan berbagai varian rasa berisi pudding kenyal. Cocok diminum ketika cuaca panas. Dapat menyegarkan tenggorokan.</p>
+                            <h5>Rp 8.000/botol</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/q03xgi">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-8">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup8(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/3.2.png" alt="pudot">
+                        <div class="varian">
+                            <h5><font color="#5AB2FF">Varian Rasa</font></h5>
+                            <p><font color="#D8AE7E">Coklat</font></p>
+                            <p><font color="#DC6B19">Mangga</font></p>
+                            <p><font color="#CAF4FF">Bubblegum</font></p>
+                        </div>
+                        <div class="text">
+                            <h1>PUDING SEDOT</h1>
+                            <p>Pudding sedot, atau dikenal juga sebagai Pudot, adalah cemilan praktis yang populer di kalangan anak-anak dan orang dewasa. Pudot memiliki tekstur lembut dan kenyal, serta sering tersedia dalam berbagai varian rasa. Pudding yang digunakan dibuat encer sehingga mudah disedot. </p>
+                            <h5>Rp 10.000/botol</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/v6vlxb">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-9">
+                <div class="overlay">  </div>
+                <div class="content1">
+                    <div class="closebtn" onclick="togglePopup9(removeEventListener)">&times;</div>
+                    <div class="gambar">
+                        <img src="image/7.png" alt="piscok">
+                        <div class="text">
+                            <h1>ES KUWUT</h1>
+                            <p>Es Kuwut ialah minuman yang terbuat dari kelapa parut, nanas, jeruk, biji selasih, dan gula merah. Rasa segar dari buah-buahan yang digunakan dipadu dengan manisnya gula merah, menjadikan Es Kuwut cocok untuk dinikmati di cuaca panas.</p>
+                            <h5>Rp 4.000/cup</h5>
+                            <button type="button" class="button1">
+                                <a href="https://wa.link/uhb5lr">
+                                    <span>BUY NOW</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="aboutus" id="aboutus">
+        <div class="text">
+            <h2>ABOUT US</h2>
+        </div>
+        <div class="card reveal">
+            <img src="image/GiulFoodLogo.png">
+            <div>
+                <h3>OUR STORY</h3>
+                <p>GiulFood adalah usaha kami yang dimulai dari tahun 2023. Kami menjual berbagai macam camilan dalam bentuk minuman maupun makanan yang menggiurkan untuk menemani rasa kesepian anda. Nama usaha kami sendiri, yaitu giulfood, berasal dari kata giul yang berarti bergoyang. Kami terinspirasi dari salah satu reaksi seseorang, terutama seorang perempuan ketika merasa nikmat saat memakan suatu makanan yaitu bergoyang. Jadi kami ingin menciptakan sebuah produk yang dapat memberikan kesenangan sehingga pembeli dapat bereaksi seperti itu. Dengan ini, Kami berharap usaha kami dapat menyebarkan kesenangan melalui produk kami kepada pelanggan tercinta kami.  </p>
+            </div>
+        </div>
+        <div class="card1 reveal">
+            <div>
+                <h3>VISI MISI</h3>
+                <h4> <font color="#FC4100">VISI</font></h4>
+                <p>Menjadi sahabat yang setia menemani pelanggan dengan menyediakan beragam macam jajanan yang menggugah selera untuk menghilangkan rasa bosan. Sehingga tak hanya memuaskan, tetapi juga membagikan kebahagian melalui berbagai jajanan kami.  </p>
+                <h4><font color="#F94C10">MISI</font></h4>
+                <p>Kami berkomitmen untuk menyediakan jajanan lezat dan menarik yang beragam, mulai dari rasa manis, gurih, pedas, hingga segar. Kami terus berinovasi untuk menambah pilihan jajanan sesuai tren pasar, sehingga dapat memuaskan selera semua pelanggan.   </p>
+            </div>
+            <img src="image/GiulFoodLogo.png">
+        </div>
+    </section>
+
+    <!--COMMENT-->
+    <section class="comments1 reveal" id="rating">
+        <div class="container">
+            <div class="head"><h1>Comment</h1></div>
+            <div>
+                <span id="comment">0</span>
+                Comments
+            </div>
+            <div class="text">
+                <p>we'd love to hear your feedback</p>
+            </div>
+            <div class="comments"></div>
+            <div class="commentbox">
+                <img src="image/botak.png" alt="">
+                <div class="content">
+                    <h2>Comment as: </h2>
+                    <input type="text" value="Anonymous" class="user">
+                    <div class="commentinput">
+                        <input type="text" placeholder="Enter comment" class="usercomment">
+                        <div class="buttons">
+                            <button type="submit" disabled id="publish">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTS-->
+    <section class="contacts" class id="contacts">
+        <div class="contact-text">
+            <h2>Reach Us Out!</h2>
+        </div>
+        <div class="contact-info">
+            <a href="https://wa.link/2jae22">
+                <i class="fa-brands fa-whatsapp" alt="whatsapp">
+                    <h6>whatsapp</h6>
+                </i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=giulfood.1@gmail.com">
+                <i class="fa-solid fa-envelope" alt="whatsapp">
+                    <h6>gmail</h6>
+                </i>
+            </a>
+            <a href="https://www.instagram.com/giulfood">
+                <i class="fa-brands fa-instagram" alt="whatsapp">
+                    <h6>instagram</h6>
+                </i>
+            </a>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
