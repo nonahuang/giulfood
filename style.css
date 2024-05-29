@@ -1043,7 +1043,7 @@ header.sticky{
     }
 } */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:632px){
     html,body{
         overflow-x: hidden;
     }
@@ -1083,7 +1083,6 @@ header.sticky{
         margin-right: 150px;
     }
     .show-search .search_button{
-
         margin-right: 150px;
     }
     .search{
@@ -1195,5 +1194,82 @@ header.sticky{
     }
     .commentinput{
         width: 250px;
+    }
+}
+
+@media screen and (max-width:440px){
+    #menu-icon{
+        margin-left: 145px;
+    }
+    .search_button{
+        margin-right: 260px;
+    }
+    .show-search .search_button{
+        margin-right: 260px;
+    }
+    .search1{
+        width:150px;
+    }
+    .popup .content1{
+        width: 300px;
+        height: 300px;
+    }
+    .gambar img {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .gambar .text h1{
+        font-size: 15px;
+    }
+    .gambar .text{
+        font-size: 10px;
+    }
+    .gambar .text p{
+        font-size: 8px;
+    }
+    .button1{
+        width: 100px;
+        padding: 0 0;
+        margin-top: 0px;
+    }
+    .varian{
+        width: 100px;
+        height: 140px;
+        margin-top: 0;
+    }
+    .varian h2{
+        font-size: 10px;
+    }
+    .varian h5{
+        font-size: 10px;
+    }
+    .varian p{
+        font-size: 5px;
+        padding: 1px;
+    }
+    .varian1{
+        width: 100px;
+        height: 140px;
+        margin-top: 0;
+    }
+    .varian1 h5{
+        font-size: 10px;
+    }
+    .varian1 p{
+        font-size: 5px;
+        padding: 1px;
+    }
+    .card1 img{
+        margin: -850px 0px 0px 30px;
+        width: 50vw;
+        height:200px;
+    }
+
+    .container{
+        width: 300px;
+    }
+    .commentinput{
+        width:200px;
     }
 }
