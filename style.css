@@ -313,7 +313,7 @@ header.sticky{
 /* GELOMBANG */
 .custom-shape-divider-bottom-1714973479 {
     position: absolute;
-    bottom: -10px;
+    bottom:  0px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -325,7 +325,7 @@ header.sticky{
     position: relative;
     display: block;
     width: calc(100% + 0px);
-    height: 200px;
+    height: 150px;
 }
 
 .custom-shape-divider-bottom-1714973479 .shape-fill {
@@ -338,6 +338,7 @@ header.sticky{
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
+    margin-top: 90px;
     margin-bottom: 30px;
     padding-bottom: 8cqmin;
 }
@@ -472,6 +473,7 @@ header.sticky{
     cursor:pointer;
     text-align: left;
 }
+
 .popup.active .overlay{
     display: block;
 }
