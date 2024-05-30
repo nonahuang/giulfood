@@ -470,9 +470,8 @@ header.sticky{
 
 .popup .closebtn{
     cursor:pointer;
-    text-align: end;
+    text-align: left;
 }
-
 .popup.active .overlay{
     display: block;
 }
