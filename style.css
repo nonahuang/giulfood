@@ -150,7 +150,7 @@ body::-webkit-scrollbar{
 .search_input {
     background-color: white;
     border: black;
-    box-shadow: 0 4px 14px hsla(222, 68%, 12%, .1);
+    box-shadow: 0 4px 14px hsla(222, 68%, 12%, .1); 
     outline: none;
     width: calc(108% - 65px);
     height: 50px;
@@ -313,7 +313,7 @@ header.sticky{
 /* GELOMBANG */
 .custom-shape-divider-bottom-1714973479 {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -325,7 +325,7 @@ header.sticky{
     position: relative;
     display: block;
     width: calc(100% + 0px);
-    height: 100px;
+    height: 200px;
 }
 
 .custom-shape-divider-bottom-1714973479 .shape-fill {
@@ -464,7 +464,7 @@ header.sticky{
     z-index: 2;
     text-align: center;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     transform: translate(-50%, -50%) scale(0);
 }
 
@@ -552,6 +552,24 @@ header.sticky{
     margin: 0;
     font-weight: 500;
 }
+
+.varian1 h52{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 0px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.varian1 p2{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 500;
+}
+
 .varian1:hover{
     opacity: 1;
 }
@@ -598,7 +616,7 @@ header.sticky{
 .aboutus{
     background-color: beige;
     padding-bottom: 90px;
-    box-shadow:
+    box-shadow: 
     rgb(0 0 0 / 10%);
 }
 
@@ -619,11 +637,11 @@ header.sticky{
     width: 100%;
     max-width: 800px;
     height: 70vh;
-    padding:
+    padding: 
     50px 30px 50px 20px;
     background: linear-gradient( rgb(255, 255, 161), rgb(255, 179, 0));
     border-radius: 24px;
-    box-shadow:
+    box-shadow: 
     0 60px 40px
     rgb(0 0 0/40%);
 }
@@ -636,7 +654,7 @@ header.sticky{
     margin-left: -60px;
     margin-right: 30px;
     border-radius: 500px;
-    box-shadow:
+    box-shadow: 
     0 10px 40px
     rgb(0 0 0/40%);
 }
@@ -665,12 +683,12 @@ header.sticky{
     width: 100%;
     max-width: 800px;
     height: 80vh;
-    padding:
+    padding: 
     50px 30px 50px 20px;
     margin-top: 90px;
     background: linear-gradient( rgb(255, 255, 161), rgb(255, 179, 0));
     border-radius: 24px;
-    box-shadow:
+    box-shadow: 
     0 60px 40px
     rgb(0 0 0/40%);
 }
@@ -684,7 +702,7 @@ header.sticky{
     margin-left: 45px;
     margin-right: -50px;
     border-radius: 500px;
-    box-shadow:
+    box-shadow: 
     0 10px 40px
     rgb(0 0 0/40%);
 }
@@ -905,9 +923,22 @@ header.sticky{
 .fa-instagram{
     color:#321350
 }
-
-/* VER HP */
-
+/* 
+VER HP */
+@media screen and (max-width:900px){
+    .container{
+        width: 700px;
+    }
+    .commentinput{
+        width: 500px;
+    }
+    .card{
+        height: 87vh;
+    }
+    .card1{
+        height: 100vh;
+    }
+}
 @media screen and (max-width:755px){
     #menu-icon{
         visibility: visible;
@@ -933,6 +964,12 @@ header.sticky{
     }
     .navmenu.open{
         right: 0;
+    }
+    .container{
+        width: 500px;
+    }
+    .commentinput{
+        width: 300px;
     }
 }
 @media screen and (max-width:632px){
@@ -1104,12 +1141,15 @@ header.sticky{
     }
     .popup .content1{
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .closebtn{
+        font-size: 20px;
     }
     .gambar img {
-        width: 100px;
-        height: 150px;
-        margin-top: 10px;
+        width: 130px;
+        height: 220px;
+        margin-top: 40px;
     }
     .gambar .text h1{
         font-size: 15px;
@@ -1118,7 +1158,8 @@ header.sticky{
         font-size: 10px;
     }
     .gambar .text p{
-        font-size: 8px;
+        font-size: 10px;
+        padding-right: 5px;
     }
     .button1{
         width: 100px;
@@ -1126,33 +1167,34 @@ header.sticky{
         margin-top: 0px;
     }
     .varian{
-        width: 100px;
-        height: 140px;
-        margin-top: 0;
+        width: 130px;
+        height: 200px;
+        margin-top: 40px;
     }
     .varian h2{
-        font-size: 10px;
+        font-size: 15px;
     }
     .varian h5{
         font-size: 10px;
     }
     .varian p{
-        font-size: 5px;
+        font-size: 7px;
         padding: 1px;
     }
     .varian1{
-        width: 100px;
-        height: 140px;
-        margin-top: 0;
+        width: 130px;
+        height: 200px;
+        margin-top: 40px;
     }
     .varian1 h5{
         font-size: 10px;
     }
     .varian1 p{
-        font-size: 5px;
+        font-size: 9px;
         padding: 1px;
     }
     .card1 img{
+        position:relative;
         margin: -850px 0px 0px 30px;
         width: 50vw;
         height:200px;
@@ -1163,5 +1205,11 @@ header.sticky{
     }
     .commentinput{
         width:200px;
+    }
+    .contact-info i{
+         font-size: 50px;
+    }
+    .contact-info i:hover{
+        font-size: 70px;
     }
 }
